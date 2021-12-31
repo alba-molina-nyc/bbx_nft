@@ -34,7 +34,6 @@ ALLOWED_HOSTS = []
 # $ pip install django-filter
 
 INSTALLED_APPS = [
-    'rest_framework',
     'main_nft_app',
     'django.contrib.admin',
     'django.contrib.auth',
