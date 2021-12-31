@@ -29,8 +29,12 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# installed $ pip install djangorestframework
+# $ pip install djangorestframework-jsonapi
+# $ pip install django-filter
 
 INSTALLED_APPS = [
+    'rest_framework',
     'main_nft_app',
     'django.contrib.admin',
     'django.contrib.auth',
