@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<h1>Items List</h1>
+
+{% for item in object_list %}
+
+            <p>Name: {{ item.name }}</p>
+           
+    
+{% endfor %}
+
+
+
+{% endblock %}

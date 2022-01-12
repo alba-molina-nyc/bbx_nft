@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView
-from .models import Project
+from django.views.generic import ListView
+from .models import Item
+from django.shortcuts import render, redirect
 # Create your views here.
 
 def home(request):
@@ -11,3 +13,12 @@ def assets(request):
 
 def asset_create(request):
     return render(request, 'asset_create.html')
+
+
+class ItemsIndex(ListView):
+    model = Item
+    template_name = 'index.html'
+
+    def get_queryset(self):
+        queryset = Item.objects
+        return queryset.filter(user=self.request.user)

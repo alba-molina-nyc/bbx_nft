@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BingeBuilderX</title>
+     <!-- Local CSS -->
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
       <!-- Jquery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <!-- Materialize CSS -->
@@ -26,6 +28,7 @@
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="{% url 'assets' %}">Assets</a></li>
                 <li><a href="">Create</a></li>
+                <li><a href="{% url 'index' %}">View All My Items</a></li>
               </ul>
             </div>
           </nav>
